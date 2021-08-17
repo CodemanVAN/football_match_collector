@@ -31,8 +31,8 @@ win_cmd="""SELECT
 
 class Analyzer():
     def __init__(self):
-        self.sheet = pymysql.connect(host='1.116.145.211', port=3306,
-                                     user='whatcoldwind', passwd='whatcoldwind', db='football')
+        self.sheet = pymysql.connect(host='your database host', port=3306,
+                                     user='your database user', passwd='your database host', db='database name')
         # 创建游标
         self.all_match=[]
         self.cursor = self.sheet.cursor()
