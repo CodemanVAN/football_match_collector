@@ -185,8 +185,8 @@ print(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),'[*] 表格生成成
 
 class Analyzer():
     def __init__(self):
-        self.sheet = pymysql.connect(host='1.116.145.211', port=3306,
-                                     user='whatcoldwind', passwd='whatcoldwind', db='football')
+        self.sheet = pymysql.connect(host='your database host', port=3306,
+                                     user='your database user', passwd='your database password', db='database name')
         self.all_match=[]
         self.cursor = self.sheet.cursor()
         self.res = ()
